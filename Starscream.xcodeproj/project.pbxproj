@@ -19,6 +19,7 @@
 		33CCF08A1F5DDC030099B092 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D88EAF811ED4DFD3004FE2C3 /* libz.tbd */; };
 		33CCF08C1F5DDC030099B092 /* Starscream.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C1360001C473BEF00AA3A01 /* Starscream.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		33CCF08D1F5DDC030099B092 /* include.h in Headers */ = {isa = PBXBuildFile; fileRef = D85927D71ED76F25003460CB /* include.h */; };
+		AB7FF47A21556F77001ECE98 /* SSLClientCertificate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACFF1BE2052FE8F00B95FFF /* SSLClientCertificate.swift */; };
 		EACFF1BF2052FE8F00B95FFF /* SSLClientCertificate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACFF1BE2052FE8F00B95FFF /* SSLClientCertificate.swift */; };
 /* End PBXBuildFile section */
 
@@ -191,7 +192,7 @@
 			attributes = {
 				LastSwiftMigration = 0700;
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = Vluxe;
 				TargetAttributes = {
 					335FA1F41F5DF71D00F6D2EC = {
@@ -244,6 +245,7 @@
 				335FA1F81F5DF71D00F6D2EC /* WebSocket.swift in Sources */,
 				335FA1F91F5DF71D00F6D2EC /* CompressionTests.swift in Sources */,
 				335FA1FA1F5DF71D00F6D2EC /* StarscreamTests.swift in Sources */,
+				AB7FF47A21556F77001ECE98 /* SSLClientCertificate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +286,7 @@
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos appletvos appletvsimulator macosx";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -307,7 +309,7 @@
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos appletvos appletvsimulator macosx";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -316,7 +318,7 @@
 			buildSettings = {
 				BITCODE_GENERATION_MODE = marker;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
@@ -337,7 +339,7 @@
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx appletvsimulator appletvos watchos watchsimulator";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VALID_ARCHS = "x86_64 i386 arm64 armv7s armv7 armv7k";
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
@@ -349,7 +351,7 @@
 			buildSettings = {
 				BITCODE_GENERATION_MODE = bitcode;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
@@ -370,7 +372,7 @@
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx appletvsimulator appletvos watchos watchsimulator";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VALID_ARCHS = "x86_64 i386 arm64 armv7s armv7 armv7k";
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
@@ -390,12 +392,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -451,12 +455,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
